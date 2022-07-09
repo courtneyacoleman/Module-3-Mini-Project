@@ -54,10 +54,10 @@ function createStats() {
 }
 
 function showStats() {
-    stats.wins = localStorage.getItem("wins");
+    stats.wins = localStorage.getItem("wins") ?? 0;
     document.getElementById("wins").innerHTML = 'Wins: ' + stats.wins;
-    stats.losses = localStorage.getItem("losses");
+    stats.losses = localStorage.getItem("losses") ?? 0;
     document.getElementById("losses").innerHTML = 'Losses: ' + stats.losses;
-    stats.ties = localStorage.getItem("ties");
+    stats.ties = localStorage.getItem("ties") ?? 0;
     document.getElementById("ties").innerHTML = 'Ties: ' + stats.ties;
   }
