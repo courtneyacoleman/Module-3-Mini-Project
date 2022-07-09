@@ -37,7 +37,7 @@ else {
 }
 console.log(stats);
 createStats();
-readValue();
+showStats();
 }
 
 const stats = {
@@ -52,11 +52,11 @@ function createStats() {
   localStorage.setItem('ties', stats.ties);
 }
 
-function readValue() {
-    var x = localStorage.getItem("mytime");
-    document.getElementById("stats").innerHTML = x;
+function showStats() {
+    var x = localStorage.getItem("wins");
+    document.getElementById("wins").innerHTML = 'Wins: ' + x;
     var y = localStorage.getItem("losses");
-    document.getElementById("stats").innerHTML = y;
+    document.getElementById("losses").innerHTML = 'Losses: ' + y;
     var z = localStorage.getItem("ties");
-    document.getElementById("stats").innerHTML = z;
+    document.getElementById("ties").innerHTML = 'Ties: ' + z;
   }
