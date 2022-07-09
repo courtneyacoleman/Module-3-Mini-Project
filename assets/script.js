@@ -1,6 +1,13 @@
 let player = '';
-document.getElementById('startButton').addEventListener('click', playerChooses);
 
+const stats = {
+  wins: 0,
+  losses: 0,
+  ties: 0,
+}
+
+document.getElementById('startButton').addEventListener('click', playerChooses);
+showStats();
 
 function playerChooses() {
   let playerInput = prompt('Rock, Paper, or Scissors? Enter R, P, or S');
@@ -39,12 +46,6 @@ console.log(stats);
 createStats();
 showStats();
 }
-
-const stats = {
-  wins: 0,
-  losses: 0,
-  ties: 0,
-}
  
 function createStats() {
   localStorage.setItem('wins', stats.wins);
@@ -53,10 +54,10 @@ function createStats() {
 }
 
 function showStats() {
-    var x = localStorage.getItem("wins");
-    document.getElementById("wins").innerHTML = 'Wins: ' + x;
-    var y = localStorage.getItem("losses");
-    document.getElementById("losses").innerHTML = 'Losses: ' + y;
-    var z = localStorage.getItem("ties");
-    document.getElementById("ties").innerHTML = 'Ties: ' + z;
+    stats.wins = localStorage.getItem("wins");
+    document.getElementById("wins").innerHTML = 'Wins: ' + stats.wins;
+    stats.losses = localStorage.getItem("losses");
+    document.getElementById("losses").innerHTML = 'Losses: ' + stats.losses;
+    stats.ties = localStorage.getItem("ties");
+    document.getElementById("ties").innerHTML = 'Ties: ' + stats.ties;
   }
