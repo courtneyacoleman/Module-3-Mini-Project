@@ -1,14 +1,19 @@
+// player vaaiable
 let player = '';
 
+// stats object
 const stats = {
   wins: 0,
   losses: 0,
   ties: 0,
 }
-
+// player presses shhot button and the game starts
 document.getElementById('startButton').addEventListener('click', playerChooses);
+
+// keeps stats updated on the mainpage
 showStats();
 
+// function for player input
 function playerChooses() {
   let playerInput = prompt('Rock, Paper, or Scissors? Enter R, P, or S');
   player = playerInput.toUpperCase();
@@ -22,6 +27,7 @@ else {
 }
 }
 
+// function for the computer to make a random choise
 function compChooses() {
   let compOptions=['R', 'P', 'S'];
   let rando = Math.floor(Math.random() * compOptions.length);
@@ -29,7 +35,7 @@ function compChooses() {
   console.log("compChooses:", computer);
   alert ("Computer chooses " + computer)
 
-
+// let player know if they won and update the stats
 if (player === computer) {
   alert('Tie game!');
   stats.ties++;
@@ -47,6 +53,7 @@ createStats();
 showStats();
 }
  
+// These two function create and update the stats from local storage
 function createStats() {
   localStorage.setItem('wins', stats.wins);
   localStorage.setItem('losses', stats.losses);

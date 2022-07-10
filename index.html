@@ -10,34 +10,42 @@
 </head>
 
 <body>
+  <!-- "jumbotron" heading -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Rock, Paper, Scissors!</h1>
-      <p class="lead">Add some kind of clever description here.</p>
+      <p class="lead">Let's get ready to rumble!</p>
     </div>
   </div>
+
+  <main>
+    <div class='container'></div>
+    <div class="row">
+  <!-- empty div added for bootstrap spacing -->
+      <div class="col col lg-2"></div>
+  <!-- start button -->
+      <div class="col col lg-4">
+        <h3>rock... <br>paper... <br>scissors...<br>
+          <button type="button" class="btn btn-warning" id="startButton">Shoot!</button>
+        </h3>
+      </div>
+
+  <!-- empty div added for boostrap spacing -->
+    <div class="col col-lg-1"></div>
+  <!-- score card -->
+    <div class = 'col col-lg-4'>
+      <ul class="list-group"> Keeping Score
+        <li class="list-group-item list-group-item-success" id="wins"></li>
+        <li class="list-group-item list-group-item-danger" id="losses"></li>
+        <li class="list-group-item list-group-item-warning" id="ties"></li> 
+    </ul>
+    </div>
+  <!-- empty div added for bootstrap spacing -->
+    <div class="col col-lg-1"></div>
+    </div>
   
-  
-  <div class='container'></div>
-  <div class="row">
-  <div class="col col lg-2"></div>
-    <div class="col col lg-4">
-  <h3>rock... <br>paper ... <br>scissors...<br>
-    <button type="button" class="btn btn-warning" id="startButton">Shoot!</button>
-  </h3>
   </div>
-  <div class="col col-lg-1"></div>
-  <div class = 'col col-lg-4'>
-  <ul class="list-group"> Keeping Score
-    <li class="list-group-item list-group-item-success" id="wins"></li>
-    <li class="list-group-item list-group-item-danger" id="losses"></li>
-    <li class="list-group-item list-group-item-warning" id="ties"></li> 
-  </ul>
-  </div>
-  <div class="col col-lg-1"></div>
-</div>
-</div>
-</div>
+</main>
 </body>
   <script src="./assets/script.js"></script>
 
