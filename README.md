@@ -5,12 +5,11 @@
 This is a game application that allows the user to play rock, paper, scissors against the computer's randomly generated choice. The wins, losses, and ties are stored on the scorecard on the homepage. 
 
 ##Deployment
-This application is deployed through Github pages and can be found at:
-https://courtneyacoleman.github.io/Work-Day-Scheduler/
+This application is deployed through Github pages and can be found here:
+https://courtneyacoleman.github.io/Module-3-Mini-Project/
 
 ## Instructions
-
-User opens the application and sees the current date and time displayed at the top of the header.  Under the heading are schedule blocks for all of the hours of their typical working day.  Meetings, events, and tasks can be entered and saved to local storage so that they persist when the page is refreshed.  As the day progresses the user is able to easily tell which tasks are past, current, or future.  The past blocks become grey, current hour block will be red, and future hours are displayed in green.
+When the user opens the page they are presented with the scorecard and the button to "shoot". When they press shoot a new round of the game begins through pop-up boxes.  The first box allows them to make their choice by enter R, P, or S indicating "rock, paper, or scissors."  They are able to enter a capital or lowercase letter and the game will be able to use either respone.  If they enter something other than r, p, or s they will be presented with an alert that says "Choose a valid weapon." and be taken back to the starting page.  If the user chose a valid weapon a popup will tell them which weapon the computer chose.  Followed by another telling them if they won.  The scorecard will be updated.  
 
 # Preview
 
@@ -18,6 +17,5 @@ User opens the application and sees the current date and time displayed at the t
 
 # Future project improvements
 
-I would like the color coding to update without having to refresh the page. I was unable to get the icon to work properly through font awesome.
-
+I would like to run the game without using as many popup boxes. One idea I have is to make seperate rock, paper, and scissor buttons and have the player choose through those.  I would also like to add images or a gif to the mainpage.  
 
