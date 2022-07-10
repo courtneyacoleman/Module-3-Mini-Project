@@ -13,7 +13,7 @@ When the user opens the page they are presented with the scorecard and the butto
 
 # Preview
 
-![preview](./assets/images/Work%20Day%20Scheduler.gif)
+![preview](.gif)
 
 # Future project improvements
 
